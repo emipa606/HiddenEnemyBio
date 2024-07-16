@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HEB.HiddenEnemyBio>Hidden Enemy Bio</HEB.HiddenEnemyBio>
+  <HEB.UnknownSkillsPassions>技能與興趣尚未知曉。</HEB.UnknownSkillsPassions>
+  <HEB.UnknownBackstory>尚未知曉</HEB.UnknownBackstory>
+  <HEB.UnknownBackstoryTip>{PAWN_labelShort}沒有透露{PAWN_possessive}背景故事。</HEB.UnknownBackstoryTip>
+  <HEB.UnknownTraitTip>{PAWN_labelShort}沒有透露{PAWN_possessive}特性。</HEB.UnknownTraitTip>
+  <HEB.UnknownTrait>尚未知曉</HEB.UnknownTrait>
+  <HEB.UnknownIncapabilities>尚未知曉</HEB.UnknownIncapabilities>
+  <HEB.UnknownIncapabilitiesTip>{PAWN_labelShort}沒有透露{PAWN_pronoun}可從事的工作類型。</HEB.UnknownIncapabilitiesTip>
+  <HEB.NoPassions>{PAWN_labelShort}沒有任何興趣。</HEB.NoPassions>
+  <HEB.SettingsVanillaBio>抵抗低於此值將顯示所有信息（包括其它mod所添加的）</HEB.SettingsVanillaBio>
+  <HEB.SettingsShowSkills>抵抗低於此值將顯示技能</HEB.SettingsShowSkills>
+  <HEB.SettingsShowTraits>抵抗低於此值將顯示特性</HEB.SettingsShowTraits>
+  <HEB.SettingsShowPassions>抵抗低於此值將顯示興趣</HEB.SettingsShowPassions>
+  <HEB.SettingsShowBackstory>抵抗低於此值將顯示背景故事</HEB.SettingsShowBackstory>
+</LanguageData>

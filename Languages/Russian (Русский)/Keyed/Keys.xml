@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Unknown skills and passions. -->
+  <HEB.UnknownSkillsPassions>Неизвестные навыки и интересы.</HEB.UnknownSkillsPassions>
+  <!-- EN: Unknown -->
+  <HEB.UnknownBackstory>Неизвестно</HEB.UnknownBackstory>
+  <!-- EN: {PAWN_labelShort} has not revealed {PAWN_possessive} backstory. -->
+  <HEB.UnknownBackstoryTip>История {PAWN_labelShort} неизвестна.</HEB.UnknownBackstoryTip>
+  <!-- EN: {PAWN_labelShort} has not revealed {PAWN_possessive} trait. -->
+  <HEB.UnknownTraitTip>Неизвестно, какими чертами характера обладает &lt;color=#D09B61FF>{PAWN_labelShort}&lt;/color>.</HEB.UnknownTraitTip>
+  <!-- EN: Unknown -->
+  <HEB.UnknownTrait>Неизвестно</HEB.UnknownTrait>
+  <!-- EN: Unknown -->
+  <HEB.UnknownIncapabilities>Неизвестно</HEB.UnknownIncapabilities>
+  <!-- EN: {PAWN_labelShort} has not revealed what work types {PAWN_pronoun} will do. -->
+  <HEB.UnknownIncapabilitiesTip>Неизвестно, какие типы работ недоступны {PAWN_labelShort}.</HEB.UnknownIncapabilitiesTip>
+  <!-- EN: {PAWN_labelShort} has no passions. -->
+  <HEB.NoPassions>{PAWN_labelShort} не имеет никаких интересов.</HEB.NoPassions>
+  <!-- EN: Resistance below this will use vanilla bio, allowing any other information that other mods add to the bio to be revealed. Note that this will reveal everything. Value -->
+  <HEB.SettingsVanillaBio>При значении психологического сопротивления пленника ниже указанного будет активироваться ванильная вкладка "Персона", что раскроет любую информацию о пешке, включая добавленную модами. Значение</HEB.SettingsVanillaBio>
+  <!-- EN: Resistance below this will show skills -->
+  <HEB.SettingsShowSkills>При значении психологического сопротивления пленника ниже указанного будут раскрываться его навыки. Значение</HEB.SettingsShowSkills>
+  <!-- EN: Resistance below this will show traits -->
+  <HEB.SettingsShowTraits>При значении психологического сопротивления пленника ниже указанного будут раскрываться его черты характера. Значение</HEB.SettingsShowTraits>
+  <!-- EN: Resistance below this will show skills with passions -->
+  <HEB.SettingsShowPassions>При значении психологического сопротивления пленника ниже указанного будут раскрываться его навыки с интересами. Значение</HEB.SettingsShowPassions>
+  <!-- EN: Resistance below this will show backstory -->
+  <HEB.SettingsShowBackstory>При значении психологического сопротивления пленника ниже указанного будет раскрываться его предыстория. Значение</HEB.SettingsShowBackstory>
+</LanguageData>

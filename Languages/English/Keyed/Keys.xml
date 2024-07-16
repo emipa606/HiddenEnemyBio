@@ -1,17 +1,23 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
- 
+  <HEB.CurrentModVersion>Installed mod-version: {0}</HEB.CurrentModVersion>
   <HEB.HiddenEnemyBio>Hidden Enemy Bio</HEB.HiddenEnemyBio>
-  
   <HEB.UnknownSkillsPassions>Unknown skills and passions.</HEB.UnknownSkillsPassions>
+  <HEB.UnknownSkillsPassionsTip>{PAWN_labelShort} has not revealed {PAWN_possessive} skills and passions.
+Skills and passions will be revealed when resistance gets below {1}</HEB.UnknownSkillsPassionsTip>
   <HEB.UnknownBackstory>Unknown</HEB.UnknownBackstory>
   <HEB.UnknownBackstoryTip>{PAWN_labelShort} has not revealed {PAWN_possessive} backstory.</HEB.UnknownBackstoryTip>
+  <HEB.UnknownBackstoryTipNew>{PAWN_labelShort} has not revealed {PAWN_possessive} backstory.
+Backstory will be revealed when resistance gets below {1}</HEB.UnknownBackstoryTipNew>
   <HEB.UnknownTraitTip>{PAWN_labelShort} has not revealed {PAWN_possessive} trait.</HEB.UnknownTraitTip>
+  <HEB.UnknownTraitTipNew>{PAWN_labelShort} has not revealed {PAWN_possessive} trait.
+Traits will be revealed when resistance gets below {1}</HEB.UnknownTraitTipNew>
   <HEB.UnknownTrait>Unknown</HEB.UnknownTrait>
   <HEB.UnknownIncapabilities>Unknown</HEB.UnknownIncapabilities>
   <HEB.UnknownIncapabilitiesTip>{PAWN_labelShort} has not revealed what work types {PAWN_pronoun} will do.</HEB.UnknownIncapabilitiesTip>
+  <HEB.UnknownIncapabilitiesTipNew>{PAWN_labelShort} has not revealed what work types {PAWN_pronoun} will do.
+Work types will be revealed when resistance gets below {1}</HEB.UnknownIncapabilitiesTipNew>
   <HEB.NoPassions>{PAWN_labelShort} has no passions.</HEB.NoPassions>
-  
   <HEB.SettingsVanillaBio>Resistance below this will use vanilla bio, allowing any other information that other mods add to the bio to be revealed. Note that this will reveal everything. Value</HEB.SettingsVanillaBio>
   <HEB.SettingsShowSkills>Resistance below this will show skills</HEB.SettingsShowSkills>
   <HEB.SettingsShowTraits>Resistance below this will show traits</HEB.SettingsShowTraits>

@@ -1,0 +1,5 @@
+# Changelog for HiddenEnemyBio
+
+1.5.1 - Updated for 1.5, included the published chinese and russian translations
+Used DeepL to update translations for ChineseSimplified, French, German
+
