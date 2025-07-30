@@ -28,21 +28,21 @@ public class HiddenEnemyBioMod : Mod
         var listing_Standard = new Listing_Standard();
         listing_Standard.Begin(inRect);
         listing_Standard.Label(string.Concat("HEB.SettingsVanillaBio".Translate() + ": ",
-            Math.Round(Settings.useVanillaBioResistance, 2).ToString()));
-        Settings.useVanillaBioResistance = listing_Standard.Slider(Settings.useVanillaBioResistance, 0f, 40f);
+            Math.Round(Settings.UseVanillaBioResistance, 2).ToString()));
+        Settings.UseVanillaBioResistance = listing_Standard.Slider(Settings.UseVanillaBioResistance, 0f, 40f);
         listing_Standard.Label(string.Concat("HEB.SettingsShowSkills".Translate() + ": ",
-            Math.Round(Settings.revealSkillsResistance, 2).ToString()));
-        Settings.revealSkillsResistance = listing_Standard.Slider(Settings.revealSkillsResistance, 0f, 40f);
+            Math.Round(Settings.RevealSkillsResistance, 2).ToString()));
+        Settings.RevealSkillsResistance = listing_Standard.Slider(Settings.RevealSkillsResistance, 0f, 40f);
         listing_Standard.Label(string.Concat("HEB.SettingsShowTraits".Translate() + ": ",
-            Math.Round(Settings.revealTraitsResisitance, 2).ToString()));
-        Settings.revealTraitsResisitance = listing_Standard.Slider(Settings.revealTraitsResisitance, 0f, 40f);
+            Math.Round(Settings.RevealTraitsResisitance, 2).ToString()));
+        Settings.RevealTraitsResisitance = listing_Standard.Slider(Settings.RevealTraitsResisitance, 0f, 40f);
         listing_Standard.Label(string.Concat("HEB.SettingsShowBackstory".Translate() + ": ",
-            Math.Round(Settings.revealBackstoryResistance, 2).ToString()));
-        Settings.revealBackstoryResistance = listing_Standard.Slider(Settings.revealBackstoryResistance, 0f, 40f);
+            Math.Round(Settings.RevealBackstoryResistance, 2).ToString()));
+        Settings.RevealBackstoryResistance = listing_Standard.Slider(Settings.RevealBackstoryResistance, 0f, 40f);
         listing_Standard.Label(string.Concat("HEB.SettingsShowPassions".Translate() + ": ",
-            Math.Round(Settings.revealPassionSkillsResistance, 2).ToString()));
-        Settings.revealPassionSkillsResistance =
-            listing_Standard.Slider(Settings.revealPassionSkillsResistance, 0f, 40f);
+            Math.Round(Settings.RevealPassionSkillsResistance, 2).ToString()));
+        Settings.RevealPassionSkillsResistance =
+            listing_Standard.Slider(Settings.RevealPassionSkillsResistance, 0f, 40f);
         if (currentVersion != null)
         {
             listing_Standard.Gap();

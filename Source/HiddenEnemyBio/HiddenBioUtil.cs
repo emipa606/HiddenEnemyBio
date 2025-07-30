@@ -26,7 +26,7 @@ internal class HiddenBioUtil
         {
             case true when !pawn.guest.Recruitable:
                 return false;
-            case true when pawn.guest.resistance <= HiddenEnemyBioMod.Instance.Settings.useVanillaBioResistance:
+            case true when pawn.guest.resistance <= HiddenEnemyBioMod.Instance.Settings.UseVanillaBioResistance:
                 return true;
             case true:
                 return false;
@@ -41,7 +41,7 @@ internal class HiddenBioUtil
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
-            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.revealBackstoryResistance:
+            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.RevealBackstoryResistance:
                 return false;
             default:
                 return pawn.IsPrisoner || pawn.Faction == null || pawn.Faction.IsPlayer ||
@@ -59,7 +59,7 @@ internal class HiddenBioUtil
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
-            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.revealTraitsResisitance:
+            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.RevealTraitsResisitance:
             case false when pawn.Faction is { IsPlayer: false, PlayerRelationKind: FactionRelationKind.Hostile }:
                 return false;
             default:
@@ -77,7 +77,7 @@ internal class HiddenBioUtil
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
-            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.revealPassionSkillsResistance:
+            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.RevealPassionSkillsResistance:
             case false when pawn.Faction is { IsPlayer: false, PlayerRelationKind: FactionRelationKind.Hostile }:
                 return false;
             default:
@@ -90,7 +90,7 @@ internal class HiddenBioUtil
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
-            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.revealSkillsResistance:
+            case true when pawn.guest.resistance > HiddenEnemyBioMod.Instance.Settings.RevealSkillsResistance:
             case false when pawn.Faction is { IsPlayer: false, PlayerRelationKind: FactionRelationKind.Hostile }:
                 return false;
             default:

@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -28,7 +29,7 @@ Update of cjgunnars mod https://steamcommunity.com/sharedfiles/filedetails/?id=3
 [img]https://i.imgur.com/pufA0kM.png[/img]
 
 [table]
-    [tr][td][url=https://dsc.gg/mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td] [td][url=https://github.com/emipa606/HiddenEnemyBio][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [tr][td][url=https://discord.gg/h5TY6DA][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td] [td][url=https://github.com/emipa606/HiddenEnemyBio][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
     [/tr]
     [tr]
         [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
@@ -77,11 +78,12 @@ These mods accomplish a similar goal, and are probably incompatible.
     [*] Well Met: Hides traits for characters (configurable colonists or prisoners), reveals them over time based on their rarity
 [/list]
 
-Translations (feel free to put in the comments and I'll add it here):
+[strike]Translations (feel free to put in the comments and I'll add it here):[/strike]
 [list]
-    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3039398644]Russian[/url]
-    [*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3038038464]简繁汉化[/url]
+    [*] [strike][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3039398644]Russian[/url][/strike]
+    [*] [strike][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3038038464]简繁汉化[/url][/strike]
 [/list]
+Now included in the mod
 
 [h2] Known Issues [/h2]
 Upon opening a Bio with hidden information, some of the skill labels might display weird. If you open and close the bio, select other characters and switch back it will fix itself.
@@ -96,7 +98,6 @@ Inspired by the personality revealing in 1-2-3 Personalities.
 Please include a log, possible conflicting mods, and a brief description of what you were doing if you have any errors or I can't help you.
 
 This mod is released under a MIT License. Permission is granted to modify, reupload, fork, etc.
-[url=https://github.com/cjgunnar/HiddenEnemyBio/] Non-Steam download and source code is available on GitHub [/url]
 
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
 
@@ -104,11 +105,13 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 [list]
 [*] See if the the error persists if you just have this mod and its requirements active.
 [*] If not, try adding your other mods until it happens again.
-[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
+[*] Post your error-log using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Log Uploader[/url] or the standalone [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader[/url] and command Ctrl+F12
 [*] For best support, please use the Discord-channel for error-reporting.
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314][img]https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  biographies</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>

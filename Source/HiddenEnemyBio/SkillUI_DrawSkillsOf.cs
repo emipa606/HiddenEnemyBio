@@ -27,11 +27,11 @@ internal class SkillUI_DrawSkillsOf
             return true;
         }
 
-        DrawPassionSkillsOf(p, offset, mode, container, ___levelLabelWidth, ___skillDefsInListOrderCached);
+        drawPassionSkillsOf(p, offset, mode, container, ___levelLabelWidth, ___skillDefsInListOrderCached);
         return false;
     }
 
-    private static void DrawPassionSkillsOf(Pawn p, Vector2 offset, SkillUI.SkillDrawMode mode, Rect container,
+    private static void drawPassionSkillsOf(Pawn p, Vector2 offset, SkillUI.SkillDrawMode mode, Rect container,
         float ___levelLabelWidth, List<SkillDef> ___skillDefsInListOrderCached)
     {
         Text.Font = GameFont.Small;

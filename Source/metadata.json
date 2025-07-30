@@ -3,5 +3,13 @@
   "CanAdd": "0",
   "CanRemove": "0",
   "SocialImageSet": true,
-  "PreviewVersion": "1.5"
+  "PreviewVersion": "1.6",
+  "Patches": false,
+  "Defs": false,
+  "Assemblies": true,
+  "LinesOfCode": 86666,
+  "LinesOfXML": 0,
+  "CodeBaseSize": 78,
+  "LastXmlCleaning": "2025-07-30T20:58:54.4511112+02:00",
+  "SearchTags": " biographies"
 }

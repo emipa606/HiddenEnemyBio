@@ -56,28 +56,28 @@ public static class HiddenCharacterCardUtility
 
     private static Rect highlightRect;
 
-    public static Vector2 BasePawnCardSize = new Vector2(480f, 455f);
+    private static readonly Vector2 BasePawnCardSize = new(480f, 455f);
 
-    private static readonly Color FavColorBoxColor = new Color(0.25f, 0.25f, 0.25f);
+    private static readonly Color FavColorBoxColor = new(0.25f, 0.25f, 0.25f);
 
     private static readonly Texture2D QuestIcon = ContentFinder<Texture2D>.Get("UI/Icons/Quest");
 
     private static readonly Texture2D UnrecruitableIcon = ContentFinder<Texture2D>.Get("UI/Icons/UnwaveringlyLoyal");
 
-    public static readonly Color StackElementBackground = new Color(1f, 1f, 1f, 0.1f);
+    private static readonly Color StackElementBackground = new(1f, 1f, 1f, 0.1f);
 
-    public static List<CustomXenotype> cachedCustomXenotypes;
+    private static List<CustomXenotype> cachedCustomXenotypes;
 
     private static readonly List<ExtraFaction> tmpExtraFactions = [];
 
-    private static readonly Color TitleCausedWorkTagDisableColor = new Color(0.67f, 0.84f, 0.9f);
+    private static readonly Color TitleCausedWorkTagDisableColor = new(0.67f, 0.84f, 0.9f);
 
     private static readonly List<GenUI.AnonymousStackElement>
         tmpStackElements = [];
 
-    private static readonly StringBuilder tmpInspectStrings = new StringBuilder();
+    private static readonly StringBuilder tmpInspectStrings = new();
 
-    public static readonly Regex ValidNameRegex = new Regex("^[\\p{L}0-9 '\\-.]*$");
+    private static readonly Regex ValidNameRegex = new("^[\\p{L}0-9 '\\-.]*$");
 
     private static List<CustomXenotype> CustomXenotypes
     {
@@ -245,7 +245,7 @@ public static class HiddenCharacterCardUtility
                             return delegate
                             {
                                 var list = pawn.royalty.PermitsFromFaction(title.faction);
-                                RoyalTitleUtility.FindLostAndGainedPermits(title.def, null, out var _,
+                                RoyalTitleUtility.FindLostAndGainedPermits(title.def, null, out _,
                                     out var lostPermits);
                                 var stringBuilder = new StringBuilder();
                                 if (lostPermits.Count > 0 || list.Count > 0)
@@ -361,7 +361,7 @@ public static class HiddenCharacterCardUtility
             Widgets.Label(rect13, "HEB.UnknownSkillsPassions".Translate().Colorize(ColoredText.SubtleGrayColor));
             TooltipHandler.TipRegion(rect13,
                 "HEB.UnknownSkillsPassionsTip".Translate(pawn.Named("PAWN"),
-                    HiddenEnemyBioMod.Instance.Settings.revealPassionSkillsResistance));
+                    HiddenEnemyBioMod.Instance.Settings.RevealPassionSkillsResistance));
         }
 
         Widgets.EndGroup();
@@ -561,7 +561,7 @@ public static class HiddenCharacterCardUtility
                 var existing2 = StartingPawnUtility.GetGenerationRequest(index2);
                 var options = new List<FloatMenuOption>
                 {
-                    new FloatMenuOption("Adult".Translate().CapitalizeFirst(), delegate
+                    new("Adult".Translate().CapitalizeFirst(), delegate
                     {
                         if (existing2.AllowedDevelopmentalStages.Has(DevelopmentalStage.Adult))
                         {
@@ -573,7 +573,7 @@ public static class HiddenCharacterCardUtility
                         StartingPawnUtility.SetGenerationRequest(index2, existing2);
                         randomizeCallback();
                     }, DevelopmentalStageExtensions.AdultTex.Texture, Color.white),
-                    new FloatMenuOption("Child".Translate().CapitalizeFirst(), delegate
+                    new("Child".Translate().CapitalizeFirst(), delegate
                     {
                         if (existing2.AllowedDevelopmentalStages.Has(DevelopmentalStage.Child))
                         {
@@ -585,7 +585,7 @@ public static class HiddenCharacterCardUtility
                         StartingPawnUtility.SetGenerationRequest(index2, existing2);
                         randomizeCallback();
                     }, DevelopmentalStageExtensions.ChildTex.Texture, Color.white),
-                    new FloatMenuOption("Baby".Translate().CapitalizeFirst(), delegate
+                    new("Baby".Translate().CapitalizeFirst(), delegate
                     {
                         if (existing2.AllowedDevelopmentalStages.Has(DevelopmentalStage.Baby))
                         {
@@ -633,7 +633,7 @@ public static class HiddenCharacterCardUtility
 
         var list = new List<FloatMenuOption>
         {
-            new FloatMenuOption("AnyNonArchite".Translate().CapitalizeFirst(), delegate
+            new("AnyNonArchite".Translate().CapitalizeFirst(), delegate
             {
                 var allowedXenotypes = DefDatabase<XenotypeDef>.AllDefs
                     .Where(x => !x.Archite && x != XenotypeDefOf.Baseliner).ToList();
@@ -641,7 +641,7 @@ public static class HiddenCharacterCardUtility
                     existing => existing.ForcedXenotype != null || existing.ForcedCustomXenotype != null,
                     randomizeCallback, false);
             }),
-            new FloatMenuOption("XenotypeEditor".Translate() + "...", delegate
+            new("XenotypeEditor".Translate() + "...", delegate
             {
                 Find.WindowStack.Add(new Dialog_CreateXenotype(startingPawnIndex, delegate
                 {
@@ -1107,7 +1107,7 @@ public static class HiddenCharacterCardUtility
                         orIdeoColor = "OrIdeoColor".Translate(pawn.Named("PAWN"));
                     }
 
-                    Widgets.DrawRectFast(r, pawn.story.favoriteColor.Value);
+                    Widgets.DrawRectFast(r, pawn.story.favoriteColor.color);
                     GUI.color = FavColorBoxColor;
                     Widgets.DrawBox(r);
                     GUI.color = Color.white;
@@ -1188,7 +1188,7 @@ public static class HiddenCharacterCardUtility
 
         var list = new List<LeftRectSection>
         {
-            new LeftRectSection
+            new()
             {
                 rect = new Rect(0f, 0f, leftRect.width, num2),
                 drawer = delegate(Rect sectionRect)
@@ -1260,7 +1260,7 @@ public static class HiddenCharacterCardUtility
                             {
                                 TooltipHandler.TipRegion(rect11,
                                     "HEB.UnknownBackstoryTipNew".Translate(pawn.Named("PAWN"),
-                                        HiddenEnemyBioMod.Instance.Settings.revealBackstoryResistance));
+                                        HiddenEnemyBioMod.Instance.Settings.RevealBackstoryResistance));
                             }
 
                             num8 += rect10.height + 4f;
@@ -1370,7 +1370,7 @@ public static class HiddenCharacterCardUtility
                                     TooltipHandler.TipRegion(
                                         tip: new TipSignal(
                                             () => "HEB.UnknownTraitTipNew".Translate(pawn.Named("PAWN"),
-                                                HiddenEnemyBioMod.Instance.Settings.revealTraitsResisitance),
+                                                HiddenEnemyBioMod.Instance.Settings.RevealTraitsResisitance),
                                             (int)currentY3 * 37), rect: r);
                                 }
                             }
@@ -1429,7 +1429,7 @@ public static class HiddenCharacterCardUtility
                     Widgets.Label(rect5, "HEB.UnknownIncapabilities".Translate());
                     TooltipHandler.TipRegion(rect5,
                         "HEB.UnknownIncapabilitiesTipNew".Translate(pawn.Named("PAWN"),
-                            HiddenEnemyBioMod.Instance.Settings.revealBackstoryResistance));
+                            HiddenEnemyBioMod.Instance.Settings.RevealBackstoryResistance));
                 }
                 else if (disabledTags == WorkTags.None)
                 {
@@ -1684,7 +1684,7 @@ public static class HiddenCharacterCardUtility
         return stringBuilder.ToString();
     }
 
-    public static Vector2 PawnCardSize(Pawn pawn)
+    private static Vector2 PawnCardSize(Pawn pawn)
     {
         var basePawnCardSize = BasePawnCardSize;
         tmpInspectStrings.Length = 0;
@@ -1697,7 +1697,7 @@ public static class HiddenCharacterCardUtility
         return basePawnCardSize;
     }
 
-    public static void DoNameInputRect(Rect rect, ref string name, int maxLength)
+    private static void DoNameInputRect(Rect rect, ref string name, int maxLength)
     {
         var text = Widgets.TextField(rect, name);
         if (text.Length <= maxLength && ValidNameRegex.IsMatch(text))

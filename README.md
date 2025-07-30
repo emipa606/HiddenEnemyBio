@@ -1,4 +1,4 @@
-# [Hidden Enemy Bio (Continued)]()
+# [Hidden Enemy Bio (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3290742314)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -57,13 +57,14 @@ These mods accomplish a similar goal, and are probably incompatible.
 
 
 
-Translations (feel free to put in the comments and I'll add it here):
+~~Translations (feel free to put in the comments and I'll add it here):~~
 
 
-    -  [Russian](https://steamcommunity.com/sharedfiles/filedetails/?id=3039398644)
-    -  [简繁汉化](https://steamcommunity.com/sharedfiles/filedetails/?id=3038038464)
+    -  ~~[Russian](https://steamcommunity.com/sharedfiles/filedetails/?id=3039398644)~~
+    -  ~~[简繁汉化](https://steamcommunity.com/sharedfiles/filedetails/?id=3038038464)~~
 
 
+Now included in the mod
 
 ##  Known Issues 
 
@@ -80,7 +81,6 @@ Inspired by the personality revealing in 1-2-3 Personalities.
 Please include a log, possible conflicting mods, and a brief description of what you were doing if you have any errors or I can't help you.
 
 This mod is released under a MIT License. Permission is granted to modify, reupload, fork, etc.
-[ Non-Steam download and source code is available on GitHub ](https://github.com/cjgunnar/HiddenEnemyBio/)
 
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
 
@@ -90,10 +90,12 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
+[![Image](https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314) | tags:  biographies
