@@ -1,15 +1,15 @@
 # [Hidden Enemy Bio (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=3290742314)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of cjgunnars mod https://steamcommunity.com/sharedfiles/filedetails/?id=3036781401
 
 - Included some more information in the tooltips for hidden attributes
 - Added the [Chinese translation](https://steamcommunity.com/sharedfiles/filedetails/?id=3038038464) by BUyue and the [Russian translation](https://steamcommunity.com/sharedfiles/filedetails/?id=3039398644) by Osetrokarasek
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Hides the Bio of enemies and prisoners until their resistance is low enough.
 
@@ -84,13 +84,13 @@ This mod is released under a MIT License. Permission is granted to modify, reupl
 
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -98,4 +98,4 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314) | tags:  biographies
+[![Image](https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314) | tags: biographies

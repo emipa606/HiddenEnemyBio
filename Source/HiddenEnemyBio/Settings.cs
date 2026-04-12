@@ -9,6 +9,7 @@ internal class Settings : ModSettings
     public float RevealSkillsResistance = 10f;
     public float RevealTraitsResisitance = 15f;
     public float UseVanillaBioResistance = 10f;
+    public bool HideWildManBio = false;
 
     public override void ExposeData()
     {
@@ -17,6 +18,7 @@ internal class Settings : ModSettings
         Scribe_Values.Look(ref RevealTraitsResisitance, "revealTraitsResistance", 15f);
         Scribe_Values.Look(ref RevealBackstoryResistance, "revealBackstoryResistance", 18f);
         Scribe_Values.Look(ref RevealPassionSkillsResistance, "revealPassionSkillsResistance", 18f);
+        Scribe_Values.Look(ref HideWildManBio, "hideWildManBio", false);
         base.ExposeData();
     }
 }

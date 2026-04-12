@@ -22,6 +22,12 @@ internal class HiddenBioUtil
             return true;
         }
 
+        // Hide bio for wild men if option is enabled
+        if (HiddenEnemyBioMod.Instance.Settings.HideWildManBio && pawn.Faction == null)
+        {
+            return false;
+        }
+
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
@@ -38,6 +44,12 @@ internal class HiddenBioUtil
 
     public static bool ShouldRevealBackstory(Pawn pawn)
     {
+        // Hide backstory for wild men if option is enabled
+        if (HiddenEnemyBioMod.Instance.Settings.HideWildManBio && pawn.Faction == null && !pawn.IsPrisoner)
+        {
+            return false;
+        }
+
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
@@ -54,6 +66,12 @@ internal class HiddenBioUtil
         if (trait.Suppressed || trait.sourceGene != null)
         {
             return true;
+        }
+
+        // Hide traits for wild men if option is enabled
+        if (HiddenEnemyBioMod.Instance.Settings.HideWildManBio && pawn.Faction == null && !pawn.IsPrisoner)
+        {
+            return false;
         }
 
         switch (pawn.IsPrisoner)
@@ -74,6 +92,12 @@ internal class HiddenBioUtil
 
     public static bool ShouldRevealPassionSkills(Pawn pawn)
     {
+        // Hide passion skills for wild men if option is enabled
+        if (HiddenEnemyBioMod.Instance.Settings.HideWildManBio && pawn.Faction == null && !pawn.IsPrisoner)
+        {
+            return false;
+        }
+
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:
@@ -87,6 +111,12 @@ internal class HiddenBioUtil
 
     public static bool ShouldRevealSkills(Pawn pawn)
     {
+        // Hide skills for wild men if option is enabled
+        if (HiddenEnemyBioMod.Instance.Settings.HideWildManBio && pawn.Faction == null && !pawn.IsPrisoner)
+        {
+            return false;
+        }
+
         switch (pawn.IsPrisoner)
         {
             case true when !pawn.guest.Recruitable:

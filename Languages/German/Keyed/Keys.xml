@@ -24,4 +24,5 @@ Arbeitstypen werden enthüllt, wenn der Widerstand unter {1} fällt.</HEB.Unknow
   <HEB.SettingsShowTraits>Widerstand unterhalb dieses Wertes zeigt Merkmale</HEB.SettingsShowTraits>
   <HEB.SettingsShowPassions>Widerstand unterhalb dieses Wertes zeigt Fähigkeiten mit Leidenschaften</HEB.SettingsShowPassions>
   <HEB.SettingsShowBackstory>Der Widerstand darunter zeigt die Hintergrundgeschichte</HEB.SettingsShowBackstory>
+  <HEB.SettingsHideWildManBio>Auch verstecken Bio für wilde Männer</HEB.SettingsHideWildManBio>
 </LanguageData>

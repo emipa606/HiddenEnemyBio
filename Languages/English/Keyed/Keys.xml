@@ -23,4 +23,5 @@ Work types will be revealed when resistance gets below {1}</HEB.UnknownIncapabil
   <HEB.SettingsShowTraits>Resistance below this will show traits</HEB.SettingsShowTraits>
   <HEB.SettingsShowPassions>Resistance below this will show skills with passions</HEB.SettingsShowPassions>
   <HEB.SettingsShowBackstory>Resistance below this will show backstory</HEB.SettingsShowBackstory>
+  <HEB.SettingsHideWildManBio>Also hide bio for wild men</HEB.SettingsHideWildManBio>
 </LanguageData>

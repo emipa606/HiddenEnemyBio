@@ -24,4 +24,5 @@
 当抵抗力低于 {1} 时，特质就会显现。</HEB.UnknownTraitTipNew>
   <HEB.UnknownIncapabilitiesTipNew>{PAWN_labelShort} 还没有透露 {PAWN_pronoun} 的工作类型。
 当阻力低于 {1} 时，将显示工种。</HEB.UnknownIncapabilitiesTipNew>
+  <HEB.SettingsHideWildManBio>同时隐藏野人的简介</HEB.SettingsHideWildManBio>
 </LanguageData>

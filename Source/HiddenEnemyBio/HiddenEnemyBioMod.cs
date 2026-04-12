@@ -43,6 +43,8 @@ public class HiddenEnemyBioMod : Mod
             Math.Round(Settings.RevealPassionSkillsResistance, 2).ToString()));
         Settings.RevealPassionSkillsResistance =
             listing_Standard.Slider(Settings.RevealPassionSkillsResistance, 0f, 40f);
+        listing_Standard.CheckboxLabeled("HEB.SettingsHideWildManBio".Translate(), 
+            ref Settings.HideWildManBio);
         if (currentVersion != null)
         {
             listing_Standard.Gap();
