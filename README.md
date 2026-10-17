@@ -98,4 +98,4 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314) | tags: biographies
+[![Image](https://img.shields.io/github/v/release/emipa606/HiddenEnemyBio?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/3290742314) | biographies

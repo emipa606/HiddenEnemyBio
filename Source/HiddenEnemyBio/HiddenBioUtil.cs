@@ -3,7 +3,7 @@ using Verse;
 
 namespace HiddenEnemyBio;
 
-internal class HiddenBioUtil
+internal static class HiddenBioUtil
 {
     public static bool ShouldDefaultBioVisible(Pawn pawn)
     {

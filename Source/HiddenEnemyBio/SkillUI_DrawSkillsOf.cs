@@ -7,9 +7,9 @@ using Verse;
 namespace HiddenEnemyBio;
 
 [HarmonyPatch(typeof(SkillUI), nameof(SkillUI.DrawSkillsOf))]
-internal class SkillUI_DrawSkillsOf
+internal static class SkillUI_DrawSkillsOf
 {
-    private static bool Prefix(Pawn p, Vector2 offset, SkillUI.SkillDrawMode mode, Rect container,
+    public static bool Prefix(Pawn p, Vector2 offset, SkillUI.SkillDrawMode mode, Rect container,
         float ___levelLabelWidth, List<SkillDef> ___skillDefsInListOrderCached)
     {
         if (HiddenBioUtil.ShouldDefaultBioVisible(p))

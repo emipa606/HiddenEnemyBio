@@ -77,7 +77,8 @@ public static class HiddenCharacterCardUtility
 
     private static readonly StringBuilder tmpInspectStrings = new();
 
-    private static readonly Regex ValidNameRegex = new("^[\\p{L}0-9 '\\-.]*$");
+    private static readonly Regex ValidNameRegex =
+        new("^[\\p{L}0-9 '\\-.]*$", RegexOptions.None, TimeSpan.FromSeconds(1));
 
     private static List<CustomXenotype> CustomXenotypes
     {
@@ -218,7 +219,7 @@ public static class HiddenCharacterCardUtility
                 num -= 40f;
             }
 
-            if ((pawn.IsColonist || DebugSettings.ShowDevGizmos) && showName)
+            if ((pawn.IsColonist || pawn.IsColonySubhuman || DebugSettings.ShowDevGizmos) && showName)
             {
                 var rect10 = new Rect(num, 0f, 30f, 30f);
                 TooltipHandler.TipRegionByKey(rect10, "RenameColonist");
@@ -508,15 +509,9 @@ public static class HiddenCharacterCardUtility
 
     private static Color GetDisabledWorkTagLabelColor(Pawn pawn, WorkTags workTag)
     {
-        foreach (var workTypeDisableCause in GetWorkTypeDisableCauses(pawn, workTag))
-        {
-            if (workTypeDisableCause is RoyalTitleDef)
-            {
-                return TitleCausedWorkTagDisableColor;
-            }
-        }
-
-        return Color.white;
+        return GetWorkTypeDisableCauses(pawn, workTag).Any(cause => cause is RoyalTitleDef)
+            ? TitleCausedWorkTagDisableColor
+            : Color.white;
     }
 
     private static void LifestageAndXenotypeOptions(Pawn pawn, Rect randomizeRect, bool allowsChildSelection,
@@ -1708,12 +1703,9 @@ public static class HiddenCharacterCardUtility
 
     private static IEnumerable<WorkTags> WorkTagsFrom(WorkTags tags)
     {
-        foreach (var allSelectedItem in tags.GetAllSelectedItems<WorkTags>())
+        foreach (var allSelectedItem in tags.GetAllSelectedItems<WorkTags>().Where(item => item != 0))
         {
-            if (allSelectedItem != 0)
-            {
-                yield return allSelectedItem;
-            }
+            yield return allSelectedItem;
         }
     }
 
